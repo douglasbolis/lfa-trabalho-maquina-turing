@@ -1,0 +1,19 @@
+;questão 4
+
+0 1 Y r q1
+0 x x r halt-accept
+
+q1 * * r q1
+q1 x x r q2
+
+q2 1 Y r q3
+q2 = = l q5
+
+q3 * * r q3
+q3 _ 1 l q4
+
+q4 * * l q4
+q4 Y 1 r q2
+
+q5 * * l q5
+q5 Y 1 r 0

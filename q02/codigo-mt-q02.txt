@@ -1,0 +1,28 @@
+digraph finite_state_machine {
+  rankdir=LR size="5"
+
+  node [shape=doublecircle] qf
+  node [shape=point] s
+  node [shape=circle]
+
+  s -> q0
+
+  q0 -> q1 [label="(a/X/D)"]
+  q0 -> q4 [label="(Y/Y/D)"]
+  
+  q1 -> q1 [label="(Y/Y/D)\n(a/a/D)"]
+  q1 -> q2 [label="(b/Y/D)"]
+  
+  q2 -> q2 [label="(Z/Z/D)\n(b/b/D)"]
+  q2 -> q3 [label="(c/Z/E)"]
+  
+  q3 -> q3 [label="(Z/Z/E)\n(a/a/E)\n(Y/Y/E)\n(b/b/E)"]
+  q3 -> q0 [label="(X/X/D)"]
+
+  q4 -> q4 [label="(Y/Y/D)"]
+  q4 -> q5 [label="(Z/Z/D)"]
+
+  q5 -> q5 [label="(Z/Z/D)"]
+  q5 -> qf [label="(_/_/D)"]
+
+}

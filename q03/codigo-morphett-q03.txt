@@ -1,24 +1,22 @@
-;questão 2
+;questão 3
 
-0 a X r q1
-0 Y Y r q4
+0 1 Y r q1
+0 0 X r q1
 
-q1 a a r q1
-q1 Y Y r q1
-q1 b Y r q2
+q1 * * r q1
+q1 _ _ l q2
 
-q2 b b r q2
-q2 Z Z r q2
-q2 c Z l q3
+q2 0 _ r q3
+q2 1 _ r q4
+q2 Y H r q6
+q2 X H r q7
 
-q3 a a l q3
-q3 Z Z l q3
-q3 Y Y l q3
-q3 b b l q3
-q3 X X r 0
+q3 _ 0 l q5
 
-q4 Y Y r q4
-q4 Z Z r q5
+q4 _ 1 l q5
 
-q5 Z Z r q5
-q5 _ _ r halt-accept
+q5 _ _ l q2
+
+q6 _ 1 l halt-accept
+
+q7 _ 0 r halt-accept
