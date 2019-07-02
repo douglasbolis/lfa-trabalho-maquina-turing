@@ -1,0 +1,35 @@
+Simulação:
+
+Para m=0 e n=0, temos: '0'.
+0
+1
+
+Para m=0 e n=1, temos: '01'.
+01
+11
+10
+11
+
+Para m=1 e n=1, temos: '001'.
+001
+101
+111
+110
+111
+
+Para m=1 e n= 3, temos: '00111'.
+00111
+10111
+11111
+11011
+11111
+11101
+11111
+11110
+11111
+
+A Máquina de Turing espera que o primeiro caracter a ser processado seja o caracter '0', podendo ter zero ou mais repetições deste caracter na sequência da cadeia e ela altera cada um destes caracteres '0' para caracteres '1'.
+
+O número de caracteres '1' pode ser zero ou mais, caso a cadeia de entrada possua algum caracter '1', um por vez, serão alterados para o caracter '0' e logo em seguida serã alterados de volta para o caracter '1'.
+
+Com base na observação dos padrões apresentados na simulação foi possível identificar a linguagem qur a Máquina de Turing reconheçe: { 00^m1^n | m>=0 ៱ n>=0 }.
