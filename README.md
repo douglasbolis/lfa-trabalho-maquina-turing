@@ -1,0 +1,1 @@
+# lfa-trabalho-maquina-turing
