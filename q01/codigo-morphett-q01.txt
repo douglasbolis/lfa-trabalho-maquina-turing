@@ -1,0 +1,15 @@
+;questão 1
+
+0 0 X r q1
+0 Y Y r q3
+
+q1 0 0 r q1
+q1 Y Y r q1
+q1 1 Y l q2
+
+q2 0 0 l q2
+q2 Y Y l q2
+q2 X X r 0
+
+q3 Y Y r q3
+q3 _ _ r halt-accept
