@@ -1,0 +1,15 @@
+;questão 7
+
+0 * * r 0
+0 a X r q1
+0 b Y r q2
+0 _ _ r halt-accept
+
+q1 b Y l q3
+q1 _ _ r q4
+
+q2 a X l q3
+q2 _ _ r q4
+
+q3 * * l q3
+q3 _ _ r 0

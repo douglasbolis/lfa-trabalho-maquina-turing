@@ -1,0 +1,11 @@
+;questão 9
+
+0 1 1 r 0
+0 0 0 r 0
+0 _ _ l q1
+
+q1 0 1 l q1
+q1 _ _ r q2
+q1 1 0 l halt-accept
+
+q2 1 0 r halt-accept

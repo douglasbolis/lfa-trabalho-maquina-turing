@@ -1,0 +1,9 @@
+;questão 8
+
+0 1 1 r 0
+0 0 0 r 0
+0 _ _ l q1
+
+q1 1 0 l q1
+q1 _ 1 r halt-accept
+q1 0 1 r halt-accept
