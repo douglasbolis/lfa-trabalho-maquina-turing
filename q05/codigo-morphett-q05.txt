@@ -1,0 +1,21 @@
+;questão 5
+
+0 a _ r q1
+0 b _ r q2
+0 _ _ r halt-accept
+
+q1 * * r q1
+q1 _ _ l q3
+
+q2 * * r q2
+q2 _ _ l q4
+
+q3 a _ l q5
+
+q4 b _ l q6
+
+q5 * * l q5
+q5 _ _ r 0
+
+q6 * * l q6
+q6 _ _ r 0

@@ -1,0 +1,20 @@
+;questão 6
+
+0 * * r 0
+0 _ _ l q1
+
+q1 a X r q2
+q1 b Y r q3
+q1 _ _ r halt-accept
+
+q2 * * r q2
+q2 _ a l q4
+
+q3 * * r q3
+q3 _ b l q5
+
+q4 * * l q4
+q4 X a l q1
+
+q5 * * l q5
+q5 Y b l q1

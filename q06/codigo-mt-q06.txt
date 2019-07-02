@@ -14,8 +14,10 @@ digraph finite_state_machine {
   q1 -> q3 [label="(b/Y/D)"]
   q1 -> qf [label="(_/_/D)"]
 
+  q2 -> q2 [label="(*/*/D)"]
   q2 -> q4 [label="(_/a/E)"]
 
+  q3 -> q3 [label="(*/*/D)"]
   q3 -> q5 [label="(_/b/E)"]
 
   q4 -> q4 [label="(*/*/E)"]
